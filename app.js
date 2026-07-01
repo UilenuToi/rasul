@@ -3,8 +3,9 @@
 
   // ====== CONFIG ======
   const WEDDING_DATE = new Date("2026-09-12T18:00:00+05:00"); // +05:00 = Kazakhstan time
-  const BACKEND_URL = "https://script.google.com/macros/s/AKfycbyCuV_Qb8cpRKEZ-ERgboHY24IGse68WW_z8YkfVzEhik9SnkbvY_CBpqafaoQoo_Uj/exec";
+  const BACKEND_URL = "https://script.google.com/macros/s/AKfycbxYFbQJv5VNchbsH8_dvDX4JaUhSFrTkk2s1AM49IeAMxovXv2aqR64IJwYbhEs6dYI/exec";
   const AUDIO_VOLUME = 0.3;
+  const AUDIO_START_TIME = 13;
 
   // ====== ELEMENTS ======
   const $ = (id) => document.getElementById(id);
@@ -54,6 +55,7 @@
     musicToggle.hidden = false;
 
     audio.volume = AUDIO_VOLUME;
+    audio.currentTime = AUDIO_START_TIME;
     try {
       await audio.play();
     } catch (e) {
