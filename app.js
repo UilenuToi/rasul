@@ -5,7 +5,7 @@
   const WEDDING_DATE = new Date("2026-09-12T18:00:00+05:00"); // +05:00 = Kazakhstan time
   const BACKEND_URL = "https://script.google.com/macros/s/AKfycbxYFbQJv5VNchbsH8_dvDX4JaUhSFrTkk2s1AM49IeAMxovXv2aqR64IJwYbhEs6dYI/exec";
   const AUDIO_VOLUME = 0.3;
-  const AUDIO_START_TIME = 13;
+  const AUDIO_START_TIME = 15;
 
   // ====== ELEMENTS ======
   const $ = (id) => document.getElementById(id);

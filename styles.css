@@ -524,6 +524,14 @@ body {
   letter-spacing: 0.1em;
 }
 
+.invitation__hosts {
+  color: var(--accent-deep);
+  font-family: var(--serif);
+  font-size: clamp(20px, 5vw, 26px);
+  font-style: italic;
+  margin-top: 24px;
+}
+
 /* ============ MUSIC TOGGLE ============ */
 .music-toggle {
   position: fixed;
