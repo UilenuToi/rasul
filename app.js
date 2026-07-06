@@ -3,7 +3,7 @@
 
   // ====== CONFIG ======
   const WEDDING_DATE = new Date("2026-09-12T18:00:00+05:00"); // +05:00 = Kazakhstan time
-  const BACKEND_URL = "https://script.google.com/macros/s/AKfycbxYFbQJv5VNchbsH8_dvDX4JaUhSFrTkk2s1AM49IeAMxovXv2aqR64IJwYbhEs6dYI/exec";
+  const BACKEND_URL = "https://script.google.com/macros/s/AKfycbyOOtmRx_FbF1l0ZHkEl2ys83V5FfMosLBAPI5OOS4qGS5g3fjEPmVvikAgB7bYf0AA/exec";
   const AUDIO_VOLUME = 0.3;
   const AUDIO_START_TIME = 17;
 
@@ -113,19 +113,14 @@
     const data = {
       timestamp: new Date().toISOString(),
       guestId: guestId || "",
-      firstName: $("firstName").value.trim(),
-      lastName: $("lastName").value.trim(),
-      section: $("section").value.trim(),
+      // firstName: $("firstName").value.trim(),
+      // lastName: $("lastName").value.trim(),
+      // section: $("section").value.trim(),
       attending: form.querySelector('input[name="attending"]:checked')?.value || "Иә",
       withPartner: $("withPartner").checked ? "Иә" : "Жоқ",
-      message: $("message").value.trim()
+      // message: $("message").value.trim()
     };
 
-    if (!data.firstName || !data.lastName || !data.section) {
-      formError.textContent = "Өрістерді толтырыңыз.";
-      formError.hidden = false;
-      return;
-    }
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Жіберілуде...";
